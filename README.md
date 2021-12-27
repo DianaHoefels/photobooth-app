@@ -7,15 +7,16 @@ The D-ID Photo Booth App lets users upload an image (that contains a face), view
 * Should contain a simple storage Database (you can use in-memory storage) for saving the user's images with their bounding boxes
 * A nodejs http server with 4 endpoints
     - `POST /detect`
-    - `GET /images`
-    - `POST /images`
-    - `DELETE /images`
+    - `GET /photos`
+    - `POST /photos`
+    - `DELETE /photos`
 * The `/detect` endpoint accepts an image file and returns a bounding box array, use some face recognition library (checkout [@tensorflow/tfjs-node](@tensorflow/tfjs-node))
-* the `POST /images` endpoint accepts an image file and its bounding box
+* the `POST /photos` endpoint accepts an image file, image name, and its bounding box
 #### Frontend
 * Use Reactjs (`create-react-app` is a good starter)
 * SPA that follows [this figma](https://www.figma.com/file/XeFkEaGnk30P96om1217P7/Face-Recognition-Gallery-App?node-id=0%3A1)
 * In the gallery, we only show the cropped image found by the backend
+* The "Save" button should be disabled until a name has been chosen for the photo
 * Error handling: 
     - if there is no face, show some nice error message to the user
     - files should only support `.jpg` format with a max file size of `5MB`
