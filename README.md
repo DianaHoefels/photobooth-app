@@ -7,9 +7,9 @@ The D-ID Photo Booth App lets users upload an image (that contains a face), dete
 * Should contain a simple storage Database (you can use in-memory storage or local mongo) for saving the user's images with their bounding boxes
 * Should contain a file system storage for the image files that will be served to the client
 * A nodejs http server with 4 endpoints
-    - `GET /photos`
-    - `POST /photos`
-* the `POST /photos` endpoint accepts an image file, image name, and its bounding box
+    - `GET /images`
+    - `POST /images`
+* the `POST /images` endpoint accepts an image file, image name, and its bounding box
 
 #### Frontend
 * SPA that follows [this figma](https://www.figma.com/file/XeFkEaGnk30P96om1217P7/Face-Recognition-Gallery-App?node-id=0%3A1)
@@ -21,7 +21,7 @@ The D-ID Photo Booth App lets users upload an image (that contains a face), dete
 
 
 ### Notes
-* Multiple faces: the app does not need to support multiple faces, in the case where an image with multiple faces are upload, the `/detect` endpoint will return a signle bounding box for the first face it recognizes.
+* Multiple faces: the app does not need to support multiple faces, in the case where an image with multiple faces is uploaded,  return a signle bounding box for the first face recognized.
 
 
 ### Bonus Points
