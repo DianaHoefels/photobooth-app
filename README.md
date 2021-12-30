@@ -13,7 +13,7 @@ The D-ID Photo Booth App lets users upload an image (that contains a face), dete
 
 #### Frontend
 * SPA that follows [this figma](https://www.figma.com/file/XeFkEaGnk30P96om1217P7/Face-Recognition-Gallery-App?node-id=0%3A1)
-* In the gallery, we only show the cropped image found by the backend
+* Use [@tensorflow-models/blazeface](https://www.npmjs.com/package/@tensorflow-models/blazeface) for face detection - see example under `client/detection_example` for how to take an image to run a detection on it
 * The "Save" button should be disabled until a name and a photo have been chosen
 * Error handling: 
     - if there is no face, show some nice error message to the user

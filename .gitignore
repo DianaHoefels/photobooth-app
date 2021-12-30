@@ -1,0 +1,19 @@
+
+# Ignore inside allowed directories
+**/*.log
+**/.DS_Store
+**/Thumbs.db
+
+.env.*.local
+.env.local
+
+node_modules
+images
+.idea
+.vscode/
+docker/
+.webpack
+dist
+tsconfig.tsbuildinfo
+.serverless
+.husky/
