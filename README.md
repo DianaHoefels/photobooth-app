@@ -1,5 +1,5 @@
 # D-ID Photo Booth
-The D-ID Photo Booth App lets users upload an image (that contains a face), detect the face, and then save the image to the gallery.
+The D-ID Photo Booth App lets users upload an image (that contains a face), detect the face, and then save the image + bounding box to the gallery.
 
 ### Spec
 
@@ -25,9 +25,10 @@ The D-ID Photo Booth App lets users upload an image (that contains a face), dete
 
 
 ### Bonus Points
-* Use mongodb as your DB and put your server + db in a docker-compose file
+* Dockerize your app and DB using docker-compose
 
 ### Submission
 - Fork this repo 
+- Write your code in the fork
 - Remove all uneeded files
-- send your solution to `ore.poran@d-id.com`
+- send a link with your solution repo to `ore.poran@d-id.com`
